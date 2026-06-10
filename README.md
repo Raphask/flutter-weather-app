@@ -1,17 +1,72 @@
-# weather_project
+# 🌤️ Flutter Weather App
 
-A new Flutter project.
+A clean weather app built with Flutter, consuming the [WeatherAPI](https://www.weatherapi.com/) REST API. Supports both Android and Web, with dark/light mode toggle.
 
-## Getting Started
+## 📱 Screenshots
+<p float="left">
+  <img src="screenshots/darkmode_home.png" width="200"/>
+  <img src="screenshots/darkmode_search.png" width="200"/>
+  <img src="screenshots/darkmode_error.png" width="200"/>
+</p>
 
-This project is a starting point for a Flutter application.
+### ☀️ Light Mode
+<p float="left">
+  <img src="screenshots/whitemode_home.png" width="200"/>
+  <img src="screenshots/whitemode_search.png" width="200"/>
+  <img src="screenshots/whitemode_error.png" width="200"/>
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Features
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Search weather by city name
+- Current temperature, condition, humidity, wind speed and feels like
+- Dark / light mode toggle
+- Error handling for invalid cities
+- Supports accented characters (e.g. "São Paulo", "Brasília")
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Tech Stack
+
+- **Flutter** (Dart)
+- **WeatherAPI.com** — REST API for weather data
+- **http** package for HTTP requests
+- **ThemeMode** for dark/light switching
+- Clean architecture: `models/`, `services/`, `screens/`
+
+## 📁 Project Structure
+
+```
+lib/
+├── main.dart
+├── screen/
+│   ├── search.dart
+│   └── models/
+│       └── weather_data.dart
+└── services/
+    └── weather_service.dart
+```
+
+## ⚙️ Getting Started
+
+1. Clone the repo
+```bash
+   git clone https://github.com/Raphask/flutter-weather-app.git
+```
+
+2. Get dependencies
+```bash
+   flutter pub get
+```
+
+3. Add your WeatherAPI key in `lib/services/weather_service.dart`
+```dart
+   static const String _apiKey = 'YOUR_API_KEY';
+```
+
+4. Run the app
+```bash
+   flutter run
+```
+
+## 📄 License
+
+MIT
