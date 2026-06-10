@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:weather_project/screen/models/weather_data.dart';
 
 class WeatherService {
-  static const String _apiKey = '2a1691c4e1fb42ce985204351261006';
+  static const String _apiKey = 'Your-API-key';
 
   static String normalizeCity(String city) {
     const withAccents    = 'àáâãäåèéêëìíîïòóôõöùúûüçñÀÁÂÃÄÅÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÇÑ';
